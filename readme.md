@@ -56,7 +56,7 @@
 
 ### Increment & Decrement
 `incr [key]` (key should number, or if not set it will create new value from 1)
-`decs [key]`
+`decr [key]`
 `incrby [key] [total incr]`
 `decrby [key] [total decr]`
 
