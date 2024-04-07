@@ -1,0 +1,33 @@
+{
+  "name": "redis-nodejs",
+  "version": "1.0.0",
+  "description": "Learn redis client with nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node-dev -T ./index.ts",
+    "run-hash": "npx ts-node-dev -T ./src/hash.ts",
+    "run-pipeline": "npx ts-node-dev -T ./src/pipeline.ts",
+    "run-set": "npx ts-node-dev -T ./src/set.ts",
+    "run-sorted-set": "npx ts-node-dev -T ./src/sorted-set.ts"
+  },
+  "keywords": [
+    "redis",
+    "redis-client",
+    "redis-nodejs"
+  ],
+  "author": "Angga Ari Wijaya",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "redis": "^4.6.13",
+    "redis-cli": "^2.1.2",
+    "ts-node": "^10.5.0",
+    "ts-node-dev": "^1.1.8"
+  },
+  "devDependencies": {
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3"
+  }
+}
