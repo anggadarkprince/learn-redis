@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev -T ./index.ts",
+    "run-string": "npx ts-node-dev -T ./src/string.ts",
     "run-hash": "npx ts-node-dev -T ./src/hash.ts",
     "run-pipeline": "npx ts-node-dev -T ./src/pipeline.ts",
     "run-set": "npx ts-node-dev -T ./src/set.ts",
     "run-sorted-set": "npx ts-node-dev -T ./src/sorted-set.ts",
-    "run-sort": "npx ts-node-dev -T ./src/sort.ts"
+    "run-sort": "npx ts-node-dev -T ./src/sort.ts",
+    "run-hyperloglog": "npx ts-node-dev -T ./src/hyperloglog.ts"
   },
   "keywords": [
     "redis",
