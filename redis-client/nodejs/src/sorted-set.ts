@@ -3,6 +3,8 @@ import {client} from "../redis-client";
 
 const run = async () => {
     // sorted set is a set with score, and it keeps sorted by redis, we can get or manipulate set by its score
+    // tabulating the most or the least of a collection of hashes, eg: product ratings, total purchases of product, most reviewed book
+    // creating relationship between records, sorted by some criteria
 
     // ZADD products 45 monitor
     const result1 = await client.zAdd('products', {score: 45, value: 'monitor'});
@@ -18,7 +20,7 @@ const run = async () => {
     const monitorRemoved = await client.zRem('products', 'monitor');
     console.log('Monitor remove & score', monitorRemoved, await client.zScore('products', 'monitor'));
 
-    // ZCARD producs
+    // ZCARD products
     const productTotal = await client.zCard('products');
     console.log('Total product', productTotal); // 3 (mouse, keyboard, cpu)
 

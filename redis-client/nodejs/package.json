@@ -9,7 +9,8 @@
     "run-hash": "npx ts-node-dev -T ./src/hash.ts",
     "run-pipeline": "npx ts-node-dev -T ./src/pipeline.ts",
     "run-set": "npx ts-node-dev -T ./src/set.ts",
-    "run-sorted-set": "npx ts-node-dev -T ./src/sorted-set.ts"
+    "run-sorted-set": "npx ts-node-dev -T ./src/sorted-set.ts",
+    "run-sort": "npx ts-node-dev -T ./src/sort.ts"
   },
   "keywords": [
     "redis",
