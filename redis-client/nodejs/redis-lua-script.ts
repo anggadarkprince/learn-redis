@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import {createClient, defineScript} from "redis";
 
 const client = createClient({
@@ -50,6 +51,22 @@ const client = createClient({
                 ];
             },
             transformReply(): any {
+            }
+        }),
+        unlock: defineScript({
+            NUMBER_OF_KEYS: 1,
+            SCRIPT: `
+				local key = KEYS[1]
+				local token = ARGV[1]
+				if redis.call('GET', key) == token then
+					return redis.call('DEL', key)
+				end
+			`,
+            transformArguments(key: string, token: string) {
+                return [key, token];
+            },
+            transformReply(reply: any): any {
+                return reply;
             }
         }),
     }

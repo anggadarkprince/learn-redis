@@ -14,7 +14,8 @@
     "run-sort": "npx ts-node-dev -T ./src/sort.ts",
     "run-hyperloglog": "npx ts-node-dev -T ./src/hyperloglog.ts",
     "run-list": "npx ts-node-dev -T ./src/list.ts",
-    "run-transactions": "npx ts-node-dev -T ./src/transactions.ts"
+    "run-transactions": "npx ts-node-dev -T ./src/transactions.ts",
+    "run-concurrency": "npx ts-node-dev -T ./src/concurrency/bid.ts"
   },
   "keywords": [
     "redis",
@@ -25,7 +26,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@types/luxon": "^3.4.2",
     "dotenv": "^16.4.5",
+    "luxon": "^3.4.4",
     "redis": "^4.6.13",
     "redis-cli": "^2.1.2",
     "ts-node": "^10.5.0",
