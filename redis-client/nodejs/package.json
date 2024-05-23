@@ -13,7 +13,8 @@
     "run-sorted-set": "npx ts-node-dev -T ./src/sorted-set.ts",
     "run-sort": "npx ts-node-dev -T ./src/sort.ts",
     "run-hyperloglog": "npx ts-node-dev -T ./src/hyperloglog.ts",
-    "run-list": "npx ts-node-dev -T ./src/list.ts"
+    "run-list": "npx ts-node-dev -T ./src/list.ts",
+    "run-transactions": "npx ts-node-dev -T ./src/transactions.ts"
   },
   "keywords": [
     "redis",
