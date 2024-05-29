@@ -15,7 +15,8 @@
     "run-hyperloglog": "npx ts-node-dev -T ./src/hyperloglog.ts",
     "run-list": "npx ts-node-dev -T ./src/list.ts",
     "run-transactions": "npx ts-node-dev -T ./src/transactions.ts",
-    "run-concurrency": "npx ts-node-dev -T ./src/concurrency/bid.ts"
+    "run-concurrency": "npx ts-node-dev -T ./src/concurrency/bid.ts",
+    "run-search": "npx ts-node-dev -T ./src/redissearch.ts"
   },
   "keywords": [
     "redis",
