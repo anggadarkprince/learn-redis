@@ -17,7 +17,8 @@
     "concurrency": "npx ts-node-dev -T src/Concurrency/bid.ts",
     "search": "npx ts-node-dev -T src/RediSearch/search.ts",
     "stream-publisher": "npx ts-node-dev -T src/Stream/publisher.ts",
-    "stream-subscriber": "npx ts-node-dev -T src/Stream/subscriber.ts"
+    "stream-subscriber": "npx ts-node-dev -T src/Stream/subscriber.ts",
+    "json": "npx ts-node-dev -T src/RedisJSON/json.ts"
   },
   "keywords": [
     "redis",
