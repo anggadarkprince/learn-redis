@@ -1,0 +1,19 @@
+{
+    "name": "angga/phpredis",
+    "type": "project",
+    "require": {
+        "predis/predis": "^2.2",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Angga\\Phpredis\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Angga Ari Wijaya",
+            "email": "anggadarkprince@gmail.com"
+        }
+    ]
+}
