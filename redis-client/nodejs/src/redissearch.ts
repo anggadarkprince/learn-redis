@@ -65,5 +65,18 @@ const run = async () => {
     // FT.SEARCH idx:cars '@name:(fa*)' // return fast, far, fact, fawn, fantastic
     const searchPrefix = await client.ft.SEARCH('idx:cars', '@name:(fast*)');
     console.log('Search car begin with "fast"', searchPrefix);
+
+    // List of indexes
+    // FT._LIST (see all indices)
+
+    // Add weight in search
+    // braces is necessary if using | (or)
+    // (@name:(chair) => {$weight: 5.0}) | (@description:(chair))
+
+    // Display explanation of query
+    // FT.EXPLAINCLI idx:items 'chair'
+
+    // Profiling query
+    // FT.PROFILE idx:items SEARCH QUERY 'chairs' LIMIT 0 0
 };
 run();
