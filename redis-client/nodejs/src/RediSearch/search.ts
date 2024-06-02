@@ -1,4 +1,4 @@
-import {client} from "../redis-client";
+import {client} from "../../redis-client";
 import {SchemaFieldTypes} from "@redis/search/dist/commands";
 
 const run = async () => {
