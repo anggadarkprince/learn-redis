@@ -13,7 +13,7 @@ $dotenv->load();
 class RedisClient {
     private static $client;
 
-    public static function getClient() {
+    public static function getClient(): Client {
         if (is_null(self::$client)) {
             // Specify Redis server connection details
             $redisParams = [

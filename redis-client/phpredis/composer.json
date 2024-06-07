@@ -3,12 +3,22 @@
     "type": "project",
     "require": {
         "predis/predis": "^2.2",
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "symfony/var-dumper": "^6.4"
     },
     "autoload": {
         "psr-4": {
             "Angga\\Phpredis\\": "src/"
-        }
+        },
+        "files": ["src/helpers/dump.php"]
+    },
+    "scripts": {
+        "string": "php src/string.php",
+        "set": "php src/set.php",
+        "hash": "php src/hash.php",
+        "list": "php src/list.php",
+        "sorted-set": "php src/sorted-set.php",
+        "hyperloglog": "php src/hyperloglog.php"
     },
     "authors": [
         {

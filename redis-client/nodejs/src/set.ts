@@ -31,7 +31,7 @@ const run = async () => {
 
     // SDIFF cars cars2
     const diffCars = await client.sDiff(['cars', 'cars2']);
-    console.log('Diff cars', diffCars); // honda, toyota
+    console.log('Diff cars', diffCars); // honda, mazda
 
     // SINTERSTORE interCar car car2 (store result of diff into another set)
     const sInterResult = await client.sInterStore('interCar', ['cars', 'cars2']);
